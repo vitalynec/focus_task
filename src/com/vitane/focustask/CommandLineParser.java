@@ -17,7 +17,6 @@ class CommandLineParser {
         int argsCounter = 0;
         if (args.length >= 3) {
 
-            // TODO Разобраться с проверкой одинакового параметра
             for (int i = 0; i < 2; i++) {
                 if ("-a".equalsIgnoreCase(args[argsCounter]) || "-d".equalsIgnoreCase(args[argsCounter])) {
                     if ("-d".equalsIgnoreCase(args[argsCounter])) {
