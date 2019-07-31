@@ -13,7 +13,7 @@ class CommandLineParser {
 
     private static final boolean DEBUG = false;
 
-    void parse(String[] args) {
+    protected void parse(String[] args) {
         int argsCounter = 0;
         if (args.length >= 3) {
 
