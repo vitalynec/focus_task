@@ -20,7 +20,7 @@ class CommandLineParser {
             // TODO Разобраться с проверкой одинакового параметра
             for (int i = 0; i < 2; i++) {
                 if ("-a".equalsIgnoreCase(args[argsCounter]) || "-d".equalsIgnoreCase(args[argsCounter])) {
-                    if ("-a".equalsIgnoreCase(args[argsCounter])) {
+                    if ("-d".equalsIgnoreCase(args[argsCounter])) {
                         Launcher.isDescSorting = true;
                     }
                     argsCounter++;

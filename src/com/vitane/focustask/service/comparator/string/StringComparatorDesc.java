@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class StringComparatorDesc implements StringComparator {
     @Override
-    public Map.Entry<Reader, ?> getAimEntry(Map<Reader, String> pool) {
+    public Map.Entry<Reader, String> getAimEntry(Map<Reader, String> pool) {
         return Collections.max(pool.entrySet(), Map.Entry.comparingByValue());
     }
 }
