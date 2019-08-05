@@ -6,7 +6,7 @@
 3. имя выходного файла, обязательное;
 4. остальные параметры – имена входных файлов, не менее одного.
 
-Примеры запуска из командной строки для Windows:
-* `java Launcher -i -a out.txt in.txt` (для целых чисел по возрастанию)
-* `sort-it.exe -s out.txt in1.txt in2.txt in3.txt` (для строк по возрастанию)
-* `sort-it.exe -d -s out.txt in1.txt in2.txt` (для строк по убыванию)
+Примеры запуска из командной строки для Windows (для приложенного файла):
+* `java -jar focus_task.jar -i -a out.txt in.txt` (для целых чисел по возрастанию)
+* `java -jar focus_task.jar -s out.txt in1.txt in2.txt in3.txt` (для строк по возрастанию)
+* `java -jar focus_task.jar -d -s out.txt in1.txt in2.txt` (для строк по убыванию)
