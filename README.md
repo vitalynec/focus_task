@@ -1,5 +1,7 @@
 ## Сортировка слиянием нескольких файлов
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fc01541b8ae745e3ad6b940897742676)](https://app.codacy.com/app/vitalynec/focus_task?utm_source=github.com&utm_medium=referral&utm_content=vitalynec/focus_task&utm_campaign=Badge_Grade_Dashboard)
+
 ### Параметры программы задаются при запуске через аргументы командной строки:
 1. режим сортировки (`-a` или `-d`), необязательный, по умолчанию сортируем по возрастанию;
 2. тип данных (`-s` или `-i`), обязательный;
