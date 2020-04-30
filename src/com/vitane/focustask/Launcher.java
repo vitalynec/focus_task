@@ -2,6 +2,8 @@ package com.vitane.focustask;
 
 import com.vitane.focustask.io.reader.Reader;
 import com.vitane.focustask.io.writer.Writer;
+import com.vitane.focustask.service.Sorter;
+import com.vitane.focustask.service.comparator.Comparator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,12 +17,14 @@ public class Launcher {
 
     public static void main(String[] args) {
         new CommandLineParser().parse(args);
-        Controller controller = new Controller(
-                isDescSorting,
-                isStringSorting,
-                writer,
-                readers
-        );
-        controller.execute();
+        Sorter sorter = new Sorter.Builder()
+                .writer(writer)
+                .comparator(new Comparator(isDescSorting, isStringSorting))
+                .addFlows(readers)
+                .build();
+        sorter.sort();
+
+        String header = "=== Completed ===";
+        System.out.println(header);
     }
 }
